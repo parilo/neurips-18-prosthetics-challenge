@@ -35,11 +35,11 @@
     CUDA_VISIBLE_DEVICES="$GPUS" PYTHONPATH=. \
         python rl/offpolicy/scripts/run_trainer.py \
         --config=experiments/mujoco/ecritic_quantile.yml
-    
+
     CUDA_VISIBLE_DEVICES="" PYTHONPATH=. \
         python rl/offpolicy/scripts/run_samplers.py \
         --config=experiments/mujoco/ecritic_quantile.yml
-    
+
     CUDA_VISIBLE_DEVICE="" tensorboard \
        --logdir=./experiments/logs
     ```
@@ -57,7 +57,7 @@
         CUDA_VISIBLE_DEVICES="$GPUS" PYTHONPATH=. \
             python catalyst/rl/offpolicy/scripts/run_trainer.py \
             --config=experiments/prosthetics/ecritic_quantile_fc.yml
-        
+
         CUDA_VISIBLE_DEVICES="" PYTHONPATH=. \
             python catalyst/rl/offpolicy/scripts/run_samplers.py \
             --config=experiments/prosthetics/ecritic_quantile_fc.yml
@@ -69,12 +69,12 @@
         CUDA_VISIBLE_DEVICES="$GPUS" PYTHONPATH=. \
             python catalyst/rl/offpolicy/scripts/run_trainer.py \
             --config=experiments/prosthetics/ecritic_quantile_lama.yml
-        
+
         CUDA_VISIBLE_DEVICES="" PYTHONPATH=. \
             python catalyst/rl/offpolicy/scripts/run_samplers.py \
             --config=experiments/prosthetics/ecritic_quantile_lama.yml
         ```
-    
+
     4. Monitoring
         ```bash
 
@@ -93,3 +93,5 @@
 [Medium post](https://medium.com/@dbrainio/neurips-to-make-the-most-of-it-and-get-to-the-top-cb103d5cdf00?fbclid=IwAR3uNq10PjiS65KjTeE0DElOkg1lTdiMzgkPOc-RSFnnqOK4gB_ftaFOWSg)
 
 [Video](https://www.youtube.com/watch?v=uGL6jcSmGoA&feature=youtu.be)
+
+[Hyperparameters used](HyperParameters.md)
