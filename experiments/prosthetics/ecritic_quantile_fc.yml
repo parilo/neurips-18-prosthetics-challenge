@@ -35,7 +35,7 @@ env:
 
 actor:
   actor: Actor
-  hiddens: [512, 512, 256, 256]
+  hiddens: [512, 512, 256]
   layer_fn: Linear
   bias: false
   norm_fn: LayerNorm
@@ -50,7 +50,7 @@ critic:
   norm_fn: LayerNorm
   activation_fn: ReLU
   concat_at: 0
-  n_atoms: 256
+  n_atoms: 101
 
 algorithm:
   n_critics: 2

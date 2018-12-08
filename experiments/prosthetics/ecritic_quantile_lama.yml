@@ -35,7 +35,7 @@ env:
 
 actor:
   actor: LamaActor
-  hiddens: [512, 512, 256]
+  hiddens: [512, 512, 256, 256]
   layer_fn: Linear
   bias: false
   norm_fn: LayerNorm

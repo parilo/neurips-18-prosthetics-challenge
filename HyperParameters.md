@@ -15,7 +15,7 @@
 
 | Parameter | Value |
 | - | - |
-| Layers | 512, 512, 256, 256 |
+| Layers | 512, 512, 256 |
 | Layer options | Layer Normalization, No biases (except last layer) |
 | Activation | ReLU |
 | Output Activation | Tanh |
@@ -31,6 +31,14 @@
 | Action Size | 19 |
 | Gamma | 0.99 |
 
+### Critic network
+
+| Parameter | Value |
+| - | - |
+| Layers | 512, 512, 256, 101 (atoms) |
+| Layer options | Layer Normalization, No biases (except last layer) |
+| Activation | ReLU |
+
 ### Actor network
 
 | Parameter | Value |
@@ -40,8 +48,6 @@
 | Activation | ReLU |
 | Output Activation | Tanh |
 
-## Common hyperparameters
-
 ### Critic network
 
 | Parameter | Value |
@@ -49,6 +55,8 @@
 | Layers | 512, 512, 256, 256 (atoms) |
 | Layer options | Layer Normalization, No biases (except last layer) |
 | Activation | ReLU |
+
+## Common hyperparameters
 
 ### Exploration parameters
 
