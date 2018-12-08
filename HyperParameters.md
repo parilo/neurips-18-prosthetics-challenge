@@ -20,6 +20,14 @@
 | Activation | ReLU |
 | Output Activation | Tanh |
 
+### Critic network
+
+| Parameter | Value |
+| - | - |
+| Layers | 512, 512, 256, 101 (atoms) |
+| Layer options | Layer Normalization, No biases (except last layer) |
+| Activation | ReLU |
+
 ## LAMA agent
 
 ### Input parameters
@@ -30,14 +38,6 @@
 | History Len | 4 |
 | Action Size | 19 |
 | Gamma | 0.99 |
-
-### Critic network
-
-| Parameter | Value |
-| - | - |
-| Layers | 512, 512, 256, 101 (atoms) |
-| Layer options | Layer Normalization, No biases (except last layer) |
-| Activation | ReLU |
 
 ### Actor network
 
